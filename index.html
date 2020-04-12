@@ -20,18 +20,18 @@
                 <h3>Форма регистрации</h3>
                 <fieldset class="form__fieldset">
                     <div class="form__field">
-                        <input class="form__input" type="text" name="name" pattern="" placeholder="Имя" required />
+                        <input class="form__input" type="text" name="name" pattern="^([А-ЯЁ][а-яё]+)(?:(?:-)([А-ЯЁ][а-яё]+))?$" placeholder="Имя" required/>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="email" name="email" pattern="" placeholder="E-Mail" required />
+                        <input class="form__input" type="email" name="email" pattern="^(.[^@]+)@(.[^@]+)\.([a-z]+)$" placeholder="E-Mail" required/>
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="" minlength="" maxlength="18"  required/>
-                        <span class="form__error">Недопустимый формат номера</span>
+                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="^(\+7|8)\s?\(?(\d{3})\)?(\s?-?\d{3}-?\s?)(\s?-?\d{2}-?\s?){2}"  maxlength="18"  required/>
+                        <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="url" name="url" pattern="" placeholder="Ваш сайт" required/>
+                        <input class="form__input" type="url" name="url" pattern="(https?:\/{2}){1}((?:(www\.)?[a-zA-Z0-9][^@\.]+)\.([a-z]+)|(?:\d{1,4}\.?){4}(:\d{2,5})?)(([\/:\?])?([a-zA-Z0-9][^@\.#\/]+))*([\/#\?]){0,2}" placeholder="Ваш сайт" required/>
                         <span class="form__error">URL в формате: http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="submit">Отправить</button>
