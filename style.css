@@ -59,7 +59,7 @@ html {
     width: 110px;
     min-width: 110px;
     height: 110px;
-    background-image: url(https://pictures.s3.yandex.net/frontend-developer/dom_bom/cover.jpg);
+    background-image: url(./cover.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
