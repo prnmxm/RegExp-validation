@@ -7,7 +7,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="https://pictures.s3.yandex.net/frontend-developer/dom_bom/logo.svg" alt="logo">
+        <img class="header__logo" src="./logo.svg" alt="logo">
         <p class="header__logo-sub">Регулярные выражения</p>
     </header>
     <main class="container">
@@ -27,7 +27,7 @@
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="^(\+7|8)\s?\(?(\d{3})\)?(\s?-?\d{3}-?\s?)(\s?-?\d{2}-?\s?){2}"  maxlength="18"  required/>
+                        <input class="form__input" type="tel" name="tel" placeholder="Телефон" pattern="(\+7|8)((\(\d{3}\)\s?\d{3}-\d{2}-\d{2})|(\s\d{3}-\d{3}-\d{2}-\d{2})|\d{10})"  maxlength="18"  required/>
                         <span class="form__error">телефон в формате: +7 (900) 000-00-00</span>
                     </div>
                     <div class="form__field">
